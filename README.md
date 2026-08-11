@@ -3,10 +3,9 @@
 Aplicación web full-stack (backend + frontend en un mismo proyecto Next.js)
 para administrar el **Evento de Innovación Tecnológica** de la universidad:
 equipos participantes, mentores, desafíos, entregas de proyectos y
-evaluaciones de los jueces.
-
-> Este proyecto **no incluye el agente de IA** mencionado en el caso; esa
-> parte queda fuera a propósito, tal como se solicitó.
+evaluaciones de los jueces. Incluye además un **asistente de IA** que
+responde preguntas sobre los datos del sistema, usando un modelo local
+vía [Ollama](https://ollama.com).
 
 ---
 
@@ -19,6 +18,7 @@ evaluaciones de los jueces.
 | Base de datos   | SQLite embebida (`better-sqlite3`), archivo local, no requiere instalar un motor de BD aparte |
 | Autenticación   | Cookie de sesión firmada con JWT (`jsonwebtoken`) + contraseñas con `bcryptjs` |
 | Estilos         | Tailwind CSS v4, tema propio (sin dependencias externas de fuentes) |
+| Asistente de IA | Modelo local vía [Ollama](https://ollama.com) (`qwen2.5:3b`), consumido desde `src/app/api/asistente/route.ts` |
 
 Backend y frontend viven **en el mismo proyecto** y se levantan con un único
 comando: `npm run dev`. No hay que correr un servidor de API por separado.
@@ -29,6 +29,9 @@ comando: `npm run dev`. No hay que correr un servidor de API por separado.
 
 - Node.js 20 o superior
 - npm (incluido con Node.js)
+- [Ollama](https://ollama.com) instalado y corriendo localmente, con el
+  modelo `qwen2.5:3b` descargado, si se quiere usar el asistente de IA
+  (ver sección 9). El resto del sistema funciona normalmente sin esto.
 
 ---
 
@@ -109,6 +112,9 @@ permiso sobre esa sección.
   edición/eliminación de la propia evaluación, y panel de tabla de
   posiciones (*leaderboard*) con el puntaje promedio por proyecto.
 - **Panel general:** contadores de cada entidad y top 5 del leaderboard.
+- **Asistente de IA:** chat que responde preguntas sobre los datos del
+  sistema (equipos, mentores, jueces, desafíos, entregas, evaluaciones,
+  leaderboard) usando un modelo de lenguaje local. Ver sección 9.
 
 ---
 
@@ -126,7 +132,10 @@ src/
 │   │   ├── desafios/
 │   │   ├── entregas/         → Lista, alta, detalle, edición
 │   │   ├── evaluaciones/     → Lista, alta, edición
+│   │   ├── asistente/        → Página de chat con el asistente de IA
 │   │   └── layout.tsx        → Verifica sesión + barra lateral
+│   ├── api/
+│   │   └── asistente/        → Ruta backend que conecta con Ollama (streaming)
 │   └── globals.css           → Tema visual (tokens de color/tipografía)
 ├── components/
 │   └── Sidebar.tsx
@@ -141,13 +150,64 @@ src/
 
 ---
 
-## 8. Notas para extender el proyecto
+## 8. Asistente de IA (Ollama)
 
-- **Agente de IA:** el caso pide incorporar un agente de IA de apoyo para
-  participantes y organizadores. Ese componente no está implementado aquí
-  a propósito; puede añadirse como una ruta/API adicional (por ejemplo
-  `src/app/api/asistente/route.ts`) que consuma un modelo de lenguaje,
-  sin necesidad de tocar el resto del sistema.
+El sistema incluye un asistente conversacional que responde preguntas sobre
+los datos reales del hackathon (por ejemplo "¿cuántos jueces hay?" o
+"¿qué equipos tiene el mentor Ana Torres?"). Corre **100% local**, sin enviar
+datos a internet, usando [Ollama](https://ollama.com) como motor del modelo.
+
+### 8.1. Instalar y preparar Ollama
+
+```bash
+# 1. Instala Ollama desde https://ollama.com/download
+
+# 2. Descarga el modelo (una sola vez)
+ollama pull qwen2.5:3b
+
+# 3. Verifica que el servidor de Ollama esté corriendo
+#    (se inicia automáticamente al instalar, o corre "ollama serve")
+curl http://localhost:11434/api/tags
+```
+
+### 8.2. Cómo funciona
+
+- La página `/asistente` muestra un chat (`ChatClient.tsx`).
+- Cada mensaje se envía a `src/app/api/asistente/route.ts`, que:
+  1. Verifica que haya una sesión activa.
+  2. Consulta la base de datos (`src/lib/queries.ts`) y arma un resumen de
+     equipos, mentores, jueces, desafíos, entregas y leaderboard.
+  3. Envía ese resumen junto con la pregunta a Ollama (`POST /api/chat`).
+  4. Retransmite la respuesta en streaming al navegador.
+
+### 8.3. Configuración opcional
+
+Por defecto usa `http://localhost:11434` y el modelo `qwen2.5:3b`. Si
+quieres cambiarlos, agrega esto a tu `.env.local`:
+
+```bash
+OLLAMA_URL=http://localhost:11434
+OLLAMA_MODEL=qwen2.5:3b
+```
+
+### 8.4. Notas
+
+- Si Ollama no está corriendo, el chat muestra un mensaje de error claro
+  (no rompe el resto de la aplicación).
+- `qwen2.5:3b` es un modelo pequeño (3B parámetros): suficiente para
+  preguntas simples sobre los datos, pero puede equivocarse en preguntas
+  muy complejas o ambiguas.
+
+---
+
+## 9. Notas para extender el proyecto
+
+- **Agente de IA:** el caso pedía incorporar un agente de IA de apoyo para
+  participantes y organizadores; ya está implementado (ver sección 8) usando
+  un modelo local vía Ollama, sin necesidad de tocar el resto del sistema.
+  Si se quiere usar un proveedor en la nube en vez de un modelo local
+  (OpenAI, Anthropic, etc.), basta con reemplazar la llamada a Ollama en
+  `src/app/api/asistente/route.ts` por la del proveedor elegido.
 - **Base de datos:** si en algún momento se prefiere migrar de SQLite a un
   motor cliente-servidor (PostgreSQL/MySQL), toda la lógica de acceso a
   datos está centralizada en `src/lib/db.ts` y `src/lib/queries.ts`, lo

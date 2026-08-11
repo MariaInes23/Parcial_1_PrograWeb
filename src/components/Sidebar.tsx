@@ -16,6 +16,7 @@ const LINKS: { href: string; label: string; roles: string[] }[] = [
   { href: "/desafios", label: "Desafíos", roles: ["ADMIN", "MENTOR", "JUEZ"] },
   { href: "/entregas", label: "Entregas", roles: ["ADMIN", "MENTOR", "JUEZ"] },
   { href: "/evaluaciones", label: "Evaluaciones", roles: ["ADMIN", "MENTOR", "JUEZ"] },
+  { href: "/asistente", label: "Asistente IA", roles: ["ADMIN", "MENTOR", "JUEZ"] },
 ];
 
 export default function Sidebar({ user }: { user: SessionUser }) {

@@ -1,0 +1,27 @@
+{
+  "node": {
+    "002c0fe61b3cffc0431cdbbf93426948b5328cf97c": {
+      "workers": {
+        "app/(app)/entregas/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/entregas/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/lib/actions/auth.ts"
+    },
+    "60390127c343c03b41150030c98e8642a5457d15e9": {
+      "workers": {
+        "app/(app)/entregas/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/entregas/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "loginAction",
+      "filename": "src/lib/actions/auth.ts"
+    }
+  },
+  "edge": {}
+}

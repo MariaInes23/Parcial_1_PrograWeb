@@ -1,0 +1,10 @@
+{
+  "/(app)/dashboard/page": "app/(app)/dashboard/page.js",
+  "/(app)/desafios/page": "app/(app)/desafios/page.js",
+  "/(app)/entregas/page": "app/(app)/entregas/page.js",
+  "/(app)/equipos/page": "app/(app)/equipos/page.js",
+  "/(app)/evaluaciones/page": "app/(app)/evaluaciones/page.js",
+  "/(app)/jueces/page": "app/(app)/jueces/page.js",
+  "/(app)/mentores/page": "app/(app)/mentores/page.js",
+  "/login/page": "app/login/page.js"
+}

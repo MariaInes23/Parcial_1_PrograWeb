@@ -1,0 +1,60 @@
+{
+  "node": {
+    "002c0fe61b3cffc0431cdbbf93426948b5328cf97c": {
+      "workers": {
+        "app/(app)/desafios/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/desafios/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/challenges.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/lib/actions/auth.ts"
+    },
+    "60390127c343c03b41150030c98e8642a5457d15e9": {
+      "workers": {
+        "app/(app)/desafios/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/desafios/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/challenges.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "loginAction",
+      "filename": "src/lib/actions/auth.ts"
+    },
+    "40baaba74159011b99a174db68452426179da8dd3c": {
+      "workers": {
+        "app/(app)/desafios/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/desafios/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/challenges.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "deleteChallengeAction",
+      "filename": "src/lib/actions/challenges.ts"
+    },
+    "40bbd0183c56fe9d3c62bfb02a8e9fc25361adf1ed": {
+      "workers": {
+        "app/(app)/desafios/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/desafios/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/challenges.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updateChallengeAction",
+      "filename": "src/lib/actions/challenges.ts"
+    },
+    "40e5219dfaa5aae9ebd12b89ea228cabeeb3b639c9": {
+      "workers": {
+        "app/(app)/desafios/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/desafios/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/challenges.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "createChallengeAction",
+      "filename": "src/lib/actions/challenges.ts"
+    }
+  },
+  "edge": {}
+}

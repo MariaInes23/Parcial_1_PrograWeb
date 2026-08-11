@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Mar%C3%ADa%20In%C3%A9s/Documents/1%20UNIVERSIDAD%202026%20-%20SEXTO%20SEMESTRE/PROGRAMACI%C3%93N%20WEB/PARCIAL_1/hackathon-app/.next-internal/server/app/(app)/dashboard/page/actions.js%20(server%20actions%20loader)"],"sourcesContent":["export {logoutAction as '002c0fe61b3cffc0431cdbbf93426948b5328cf97c'} from 'ACTIONS_MODULE0'\nexport {loginAction as '60390127c343c03b41150030c98e8642a5457d15e9'} from 'ACTIONS_MODULE0'\n"],"names":[],"mappings":";AAAA"}}]
+}

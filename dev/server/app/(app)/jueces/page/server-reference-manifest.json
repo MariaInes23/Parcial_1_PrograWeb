@@ -1,0 +1,60 @@
+{
+  "node": {
+    "002c0fe61b3cffc0431cdbbf93426948b5328cf97c": {
+      "workers": {
+        "app/(app)/jueces/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/jueces/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/users.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/lib/actions/auth.ts"
+    },
+    "60390127c343c03b41150030c98e8642a5457d15e9": {
+      "workers": {
+        "app/(app)/jueces/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/jueces/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/users.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "loginAction",
+      "filename": "src/lib/actions/auth.ts"
+    },
+    "4020afb4d60ff0550bac22a3647c0eb339a9c08c3e": {
+      "workers": {
+        "app/(app)/jueces/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/jueces/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/users.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "createPersonAction",
+      "filename": "src/lib/actions/users.ts"
+    },
+    "40bc3d81fc86adee0b2da1eba53badde07eda05fea": {
+      "workers": {
+        "app/(app)/jueces/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/jueces/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/users.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "deletePersonAction",
+      "filename": "src/lib/actions/users.ts"
+    },
+    "40fa976b20106ddb87472e3883bbc04a9d5bfff6cd": {
+      "workers": {
+        "app/(app)/jueces/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/jueces/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/users.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updatePersonAction",
+      "filename": "src/lib/actions/users.ts"
+    }
+  },
+  "edge": {}
+}

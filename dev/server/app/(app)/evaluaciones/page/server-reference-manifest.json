@@ -1,0 +1,60 @@
+{
+  "node": {
+    "002c0fe61b3cffc0431cdbbf93426948b5328cf97c": {
+      "workers": {
+        "app/(app)/evaluaciones/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/evaluaciones/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/evaluations.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/lib/actions/auth.ts"
+    },
+    "60390127c343c03b41150030c98e8642a5457d15e9": {
+      "workers": {
+        "app/(app)/evaluaciones/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/evaluaciones/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/evaluations.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "loginAction",
+      "filename": "src/lib/actions/auth.ts"
+    },
+    "402c026984a0fce73d24d683f0877b98d0a41bceaf": {
+      "workers": {
+        "app/(app)/evaluaciones/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/evaluaciones/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/evaluations.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "deleteEvaluationAction",
+      "filename": "src/lib/actions/evaluations.ts"
+    },
+    "404e068eeb7b728aec62b61df734653550b40eeb5e": {
+      "workers": {
+        "app/(app)/evaluaciones/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/evaluaciones/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/evaluations.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "createEvaluationAction",
+      "filename": "src/lib/actions/evaluations.ts"
+    },
+    "40c5865c5faa5c130e0cdb861946a78e741f3a12ff": {
+      "workers": {
+        "app/(app)/evaluaciones/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/evaluaciones/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/evaluations.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updateEvaluationAction",
+      "filename": "src/lib/actions/evaluations.ts"
+    }
+  },
+  "edge": {}
+}

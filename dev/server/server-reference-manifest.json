@@ -1,0 +1,207 @@
+{
+  "node": {
+    "60390127c343c03b41150030c98e8642a5457d15e9": {
+      "workers": {
+        "app/(app)/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        },
+        "app/(app)/desafios/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/desafios/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/challenges.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        },
+        "app/(app)/entregas/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/entregas/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        },
+        "app/(app)/equipos/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/equipos/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        },
+        "app/(app)/evaluaciones/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/evaluaciones/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/evaluations.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        },
+        "app/(app)/jueces/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/jueces/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/users.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        },
+        "app/(app)/mentores/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/mentores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/users.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        },
+        "app/login/page": {
+          "moduleId": "[project]/.next-internal/server/app/login/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/lib/actions/auth.ts",
+      "exportedName": "loginAction"
+    },
+    "002c0fe61b3cffc0431cdbbf93426948b5328cf97c": {
+      "workers": {
+        "app/(app)/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        },
+        "app/(app)/desafios/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/desafios/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/challenges.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        },
+        "app/(app)/entregas/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/entregas/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        },
+        "app/(app)/equipos/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/equipos/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        },
+        "app/(app)/evaluaciones/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/evaluaciones/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/evaluations.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        },
+        "app/(app)/jueces/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/jueces/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/users.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        },
+        "app/(app)/mentores/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/mentores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/users.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/lib/actions/auth.ts",
+      "exportedName": "logoutAction"
+    },
+    "4020afb4d60ff0550bac22a3647c0eb339a9c08c3e": {
+      "workers": {
+        "app/(app)/jueces/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/jueces/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/users.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        },
+        "app/(app)/mentores/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/mentores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/users.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/lib/actions/users.ts",
+      "exportedName": "createPersonAction"
+    },
+    "40bc3d81fc86adee0b2da1eba53badde07eda05fea": {
+      "workers": {
+        "app/(app)/jueces/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/jueces/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/users.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        },
+        "app/(app)/mentores/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/mentores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/users.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/lib/actions/users.ts",
+      "exportedName": "deletePersonAction"
+    },
+    "40fa976b20106ddb87472e3883bbc04a9d5bfff6cd": {
+      "workers": {
+        "app/(app)/jueces/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/jueces/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/users.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        },
+        "app/(app)/mentores/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/mentores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/users.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/lib/actions/users.ts",
+      "exportedName": "updatePersonAction"
+    },
+    "40baaba74159011b99a174db68452426179da8dd3c": {
+      "workers": {
+        "app/(app)/desafios/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/desafios/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/challenges.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/lib/actions/challenges.ts",
+      "exportedName": "deleteChallengeAction"
+    },
+    "40bbd0183c56fe9d3c62bfb02a8e9fc25361adf1ed": {
+      "workers": {
+        "app/(app)/desafios/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/desafios/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/challenges.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/lib/actions/challenges.ts",
+      "exportedName": "updateChallengeAction"
+    },
+    "40e5219dfaa5aae9ebd12b89ea228cabeeb3b639c9": {
+      "workers": {
+        "app/(app)/desafios/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/desafios/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/challenges.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/lib/actions/challenges.ts",
+      "exportedName": "createChallengeAction"
+    },
+    "402c026984a0fce73d24d683f0877b98d0a41bceaf": {
+      "workers": {
+        "app/(app)/evaluaciones/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/evaluaciones/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/evaluations.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/lib/actions/evaluations.ts",
+      "exportedName": "deleteEvaluationAction"
+    },
+    "404e068eeb7b728aec62b61df734653550b40eeb5e": {
+      "workers": {
+        "app/(app)/evaluaciones/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/evaluaciones/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/evaluations.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/lib/actions/evaluations.ts",
+      "exportedName": "createEvaluationAction"
+    },
+    "40c5865c5faa5c130e0cdb861946a78e741f3a12ff": {
+      "workers": {
+        "app/(app)/evaluaciones/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/evaluaciones/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions/evaluations.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/lib/actions/evaluations.ts",
+      "exportedName": "updateEvaluationAction"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "NCA/Br2K9VNYoJUzu8YiGD3sT26YFnAXSnFTkuUkU7Y="
+}
